@@ -1,0 +1,41 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Datos: crudos e intocables, o derivados y 100% regenerables desde src/.
+# Contienen info personal de los participantes del pool (ver PROYECTO_BASE.md).
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Checkpoints y adaptadores LoRA entrenados (MBs-GBs, no van a git;
+# el README documenta cómo regenerarlos entrenando desde el corpus).
+checkpoints/
+outputs/
+adapters/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# Cache local de modelos pre-entrenados (Hugging Face Hub, etc.)
+.cache/
+huggingface_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Variables de entorno / secretos
+.env
+
+# Logs de entrenamiento
+runs/
+*.log
