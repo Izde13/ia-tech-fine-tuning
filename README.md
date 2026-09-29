@@ -1,5 +1,7 @@
 # IA-tech Fine-Tuning — LoRA sobre Qwen2.5-1.5B-Instruct
 
+[![Licencia: MIT](https://img.shields.io/badge/Licencia-MIT-yellow.svg)](LICENSE)
+
 Proyecto formativo: fine-tuning de un LLM pre-entrenado con **LoRA**
 (Low-Rank Adaptation), 100% local y en CPU (sin GPU/CUDA), adaptando
 `Qwen2.5-1.5B-Instruct` al corpus de la Polla Mundial 2026.
@@ -138,3 +140,8 @@ IA-tech-fine-tuning/
 | Técnica | Entrenamiento completo de un modelo propio (~2.8M parámetros) | LoRA: <1% de los parámetros de un modelo 550x más grande |
 | Uso del corpus | RAG — el LLM *lee* el corpus como contexto, nunca lo memoriza | Fine-tuning — el corpus *ajusta los pesos* del modelo directamente |
 | Objetivo de aprendizaje | Cómo funciona un LLM por dentro | Cómo se adapta un LLM ya entrenado, como se hace en la industria |
+
+## Licencia
+
+[MIT](LICENSE) — libre para usar, copiar, modificar y distribuir, con solo
+mantener el aviso de copyright.
